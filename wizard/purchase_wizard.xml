@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- my wizard view -->
+    <record id="purchase_xl_report" model="ir.ui.view">    
+        <field name="name">Purchase Report</field>    
+        <field name="model">purchase.wizard</field>    
+        <field name="arch" type="xml">        
+            <form string="Choose your details">            
+                <group>                               
+                    <group>                    
+                        <field name="start_date" />                    
+                        <field name="end_date" />  
+                         <field name="partner_id"/>              
+                    </group>     
+                    <!-- <group>
+                        <field name="partner_id"/>
+                    </group>        -->
+                </group>   
+                <footer>                
+                    <button name="export_xls_report" string="Export Report" type="object"  class="oe_highlight"  />                
+                    or                
+                    <button string="Cancel" class="oe_link" special="cancel"/>            
+                </footer>                
+            </form>    
+        </field>
+    </record> 
+
+     <!-- Purchase Report Submenu Action -->
+
+     <record id="action_purchase_report_xl" model="ir.actions.act_window">
+        <field name="name">Purchase Report</field>
+        <field name="res_model">purchase.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- wizard menu -->
+
+     <menuitem id="purchase_report_xl"
+         name="Purchase Report"
+         parent="purchase.purchase_report_main"
+         action="action_purchase_report_xl"
+     />
+
+
+
+</odoo>

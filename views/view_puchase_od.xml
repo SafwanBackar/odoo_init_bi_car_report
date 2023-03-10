@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_sales_purchase_inherit" model="ir.ui.view">       
+        <field name="name">sale.order.form.inherit</field>       
+        <field name="inherit_id" ref="sale.view_order_form" />       
+        <field name="model">sale.order</field>       
+        <field name="arch" type="xml">              
+            <xpath expr="//button[@name='action_quotation_send']" position="after">   		
+                <field name="purchased_id"/>
+                <button class='oe_highlight' string="Purchase Btn" 
+                name="make_purchase" type="object"/>
+            </xpath>      
+        </field>  
+    </record>
+</odoo>
+
+
+    

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="car_model_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <div class="row">
+                            <div class="col-4">
+                                <div >
+                                    <img src="/bi_car_report/report/car1.png"/>
+                                </div>
+                                <div style='border:1px black solid; text-align:center; padding-bottom:5px'>
+                                        <h6>Car Details</h6>
+                                        <h6>بيانات السيارة</h6>
+                                </div>
+                                <br/>
+                                <div>
+                                    <table style='border:1px black solid; height:100px; border-collapse:seperate'>
+                                        <tr style='background-color:#66c2ff; font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Car Type:</th>
+                                            <td style='text-align:right; width:50%'>Bill Gates</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Brand:</th>
+                                            <td style='text-align:right; width:50%'>555 77 854</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Build Year:</th>
+                                            <td style='text-align:right; width:50%'>555 77 855</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Plate NO:</th>
+                                            <td style='text-align:right; width:50%'>Bill Gates</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Chassis NO:</th>
+                                            <td style='text-align:right; width:50%'>555 77 854</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Build Year From:</th>
+                                            <td style='text-align:right; width:50%'>555 77 855</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Duration needed to:</th>
+                                            <td style='text-align:right; width:50%'>Bill Gates</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>During working hours/Beyond working hours:</th>
+                                            <td style='text-align:right; width:50%'>555 77 854</td>
+                                        </tr>
+                                        <tr style='background-color:#66c2ff;font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Duration in days/hours:</th>
+                                            <td style='text-align:right; width:50%'>555 77 855</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <br/>
+                                <div style='border:1px black solid; text-align:center; padding:5px 0'>
+                                        <h6>Car Condition When Returned</h6>
+                                        <h6>حالة السيارة عند التسليم</h6>
+                                </div>
+                                <br/>
+                                <div class="row">
+                                    <div class='col-3' style='border:1px orange solid;width: 80px;height: 80px;border-radius: 50%;display: flex;align-items: center;text-align: center;'>
+                                        <p>Not Clean</p>
+                                    </div>
+                                    <div class='col-3' style='border:1px orange solid;width: 80px;height: 80px;border-radius: 50%;display: flex;align-items: center;text-align: center;'>
+                                        <p>Clean</p>
+                                    </div>
+                                    <div class='col-3' style='border:1px orange solid;width: 80px;height: 80px;border-radius: 50%;display: flex;align-items: center;text-align: center;'>
+                                        <p>Scratched</p>
+                                    </div>
+                                    <div class='col-3' style='border:1px orange solid;width: 80px;height: 80px;border-radius: 50%;display: flex;align-items: center;text-align: center;'>
+                                        <p>Excellent</p>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div style='border:1px black solid; text-align:center; padding:5px 0'>
+                                        <h6>Fleet Car Workshop</h6>
+                                        <h6>ورشة السيارات</h6>
+                                </div>
+                                <div>
+                                     <table style='border:1px black solid; height:100px; border-collapse:seperate'>
+                                        <tr style='background-color:#66c2ff; font-size:10px'>
+                                            <th style='text-align:left; width:50%'>Car Type:</th>
+                                            <td style='text-align:right; width:50%'>Bill Gates</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
